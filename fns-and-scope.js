@@ -21,7 +21,6 @@ function getName() {
 	var num1 = prompt("What is your name?");
 	return (num1);
 }
-getName();
 
 
 //////////////////PROBLEM 3////////////////////
@@ -31,7 +30,6 @@ getName();
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
-  //Code Here
 
 
 //////////////////PROBLEM 4////////////////////
@@ -41,7 +39,8 @@ getName();
 
 //What is the difference between arguments and parameters?
 
-  //Answer Here
+  // Parameters set the data (placeholder) that can be passed through the function.
+  // Arguments is the actual data to be used in the function.
 
 
 //////////////////PROBLEM 5////////////////////
@@ -61,16 +60,22 @@ getName();
 
 //Create a function called myName that returns your name
 
-  //Code Here
+  function myName() {
+    return ("Andrew");
+  }
 
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
-  //Code Here
+function newMyName() {
+ return myName();
+
+}
 
 //Now alert the result of invoking newMyName
 
+alert(newMyName());
 
 
 //////////////////PROBLEM 7////////////////////
