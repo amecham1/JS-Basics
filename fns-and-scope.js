@@ -18,14 +18,18 @@ var name = 'Tyler';
 
 
 function getName() {
-	var num1 = prompt("What is your name?");
-	return (num1);
+	var sayHi = prompt("What is your name?");
+	return sayHi;
 }
 
 
 //////////////////PROBLEM 3////////////////////
 
+function welcome() {
 
+  alert("Welcome, " + getName());
+
+}
 
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
@@ -50,7 +54,7 @@ function getName() {
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
 
-  //Answer Here
+  //null, false, undefined, nan, 0, " "
 
 
 
@@ -84,10 +88,15 @@ alert(newMyName());
 
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
-  //Code Here
+  function outerFn(){
+    var x = function () {
+      return "Andrew";
+    };
+    return x;
+  }
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
-  //Code Here
+  var innerFn = outerFn();
 
-//Now invoke innerFn.
+innerFn();
